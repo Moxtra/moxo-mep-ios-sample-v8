@@ -85,6 +85,13 @@ class ViewController: UIViewController, MEPClientDelegate {
         present(navi, animated: true)
     }
     
+    @objc private func showCustomDashboard() {
+        let dashboard = DashboardViewController()
+        let navi = UINavigationController(rootViewController: dashboard)
+        navi.modalPresentationStyle = .fullScreen
+        present(navi, animated: true)
+    }
+    
     func client(_ client: MEPClient, didTapClose sender: Any?) {
         MEPClient.sharedInstance().hideMEPWindow()
     }
@@ -119,15 +126,23 @@ class ViewController: UIViewController, MEPClientDelegate {
         timelineBtn.setTitle("custom timeline", for: .normal)
         timelineBtn.addTarget(self, action: #selector(showCustomTimeline), for: .touchUpInside)
         
+        dashboardBtn = UIButton.init(type: .custom)
+        dashboardBtn.setTitleColor(.blue, for: .normal)
+        dashboardBtn.frame = CGRect.init(x: 0, y: 0, width: 300, height: 20)
+        dashboardBtn.setTitle("custom dashboard", for: .normal)
+        dashboardBtn.addTarget(self, action: #selector(showCustomDashboard), for: .touchUpInside)
+        
         view.addSubview(showBtn)
         view.addSubview(showliteBtn)
         view.addSubview(timelineBtn)
+        view.addSubview(dashboardBtn)
     }
     
     override func viewDidLayoutSubviews() {
         showBtn.center = CGPoint(x: view.center.x, y: 120)
         showliteBtn.center = CGPoint(x: view.center.x, y: 160)
         timelineBtn.center = CGPoint(x: view.center.x, y: 200)
+        dashboardBtn.center = CGPoint(x: view.center.x, y: 240)
     }
     
     // MARK: request helper to get access token

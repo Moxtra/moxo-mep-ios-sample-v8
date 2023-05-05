@@ -15,6 +15,7 @@
 		A870110E29FA37120024BFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A870110D29FA37120024BFD2 /* Assets.xcassets */; };
 		A870111129FA37120024BFD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A870110F29FA37120024BFD2 /* LaunchScreen.storyboard */; };
 		A87012552A04A7920024BFD2 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87012542A04A7920024BFD2 /* TimelineViewController.swift */; };
+		A8AB89AF2A04C1CE00EFA150 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB89AE2A04C1CE00EFA150 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A870111229FA37120024BFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A870111829FA38970024BFD2 /* MoxoDemoBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoxoDemoBridging-Header.h"; sourceTree = "<group>"; };
 		A87012542A04A7920024BFD2 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		A8AB89AE2A04C1CE00EFA150 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		F582767007901CFF5A9C5E66 /* Pods-MoxoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxoDemo.release.xcconfig"; path = "Target Support Files/Pods-MoxoDemo/Pods-MoxoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FECC590205DE044353BC87FC /* Pods-MoxoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxoDemo.debug.xcconfig"; path = "Target Support Files/Pods-MoxoDemo/Pods-MoxoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				A870110429FA37110024BFD2 /* AppDelegate.swift */,
 				A870110629FA37110024BFD2 /* SceneDelegate.swift */,
 				A870110829FA37110024BFD2 /* ViewController.swift */,
+				A8AB89AE2A04C1CE00EFA150 /* DashboardViewController.swift */,
 				A87012542A04A7920024BFD2 /* TimelineViewController.swift */,
 				A870110A29FA37110024BFD2 /* Main.storyboard */,
 				A870110D29FA37120024BFD2 /* Assets.xcassets */,
@@ -213,6 +216,7 @@
 			files = (
 				A870110929FA37110024BFD2 /* ViewController.swift in Sources */,
 				A870110529FA37110024BFD2 /* AppDelegate.swift in Sources */,
+				A8AB89AF2A04C1CE00EFA150 /* DashboardViewController.swift in Sources */,
 				A87012552A04A7920024BFD2 /* TimelineViewController.swift in Sources */,
 				A870110729FA37110024BFD2 /* SceneDelegate.swift in Sources */,
 			);

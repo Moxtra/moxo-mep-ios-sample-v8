@@ -16,6 +16,7 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Timeline"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(closeViewController))
         tableView = UITableView(frame: view.frame)
         tableView.delegate = self;
         tableView.dataSource = self;
@@ -23,6 +24,10 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         view.addSubview(tableView)
         
         setupSDKData()
+    }
+    
+    @objc private func closeViewController() {
+        navigationController?.dismiss(animated: true)
     }
     
     private func setupSDKData() {
