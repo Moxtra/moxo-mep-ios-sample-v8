@@ -20,6 +20,8 @@ class ViewController: UIViewController, MEPClientDelegate {
     var indicator: UIActivityIndicatorView!
     var showBtn : UIButton!
     var showliteBtn : UIButton!
+    var timelineBtn : UIButton!
+    var dashboardBtn : UIButton!
 
     
     override func viewDidLoad() {
@@ -76,6 +78,13 @@ class ViewController: UIViewController, MEPClientDelegate {
         MEPClient.sharedInstance().showMEPWindowLite()
     }
     
+    @objc private func showCustomTimeline() {
+        let timeline = TimelineViewController()
+        let navi = UINavigationController(rootViewController: timeline)
+        navi.modalPresentationStyle = .fullScreen
+        present(navi, animated: true)
+    }
+    
     func client(_ client: MEPClient, didTapClose sender: Any?) {
         MEPClient.sharedInstance().hideMEPWindow()
     }
@@ -104,13 +113,21 @@ class ViewController: UIViewController, MEPClientDelegate {
         showliteBtn.setTitle("showMEPWindowLite", for: .normal)
         showliteBtn.addTarget(self, action: #selector(showMEPWindowLite), for: .touchUpInside)
         
+        timelineBtn = UIButton.init(type: .custom)
+        timelineBtn.setTitleColor(.blue, for: .normal)
+        timelineBtn.frame = CGRect.init(x: 0, y: 0, width: 300, height: 20)
+        timelineBtn.setTitle("custom timeline", for: .normal)
+        timelineBtn.addTarget(self, action: #selector(showCustomTimeline), for: .touchUpInside)
+        
         view.addSubview(showBtn)
         view.addSubview(showliteBtn)
+        view.addSubview(timelineBtn)
     }
     
     override func viewDidLayoutSubviews() {
-        showBtn.center = CGPoint.init(x: view.center.x, y: 120)
-        showliteBtn.center = CGPoint.init(x: view.center.x, y: 160)
+        showBtn.center = CGPoint(x: view.center.x, y: 120)
+        showliteBtn.center = CGPoint(x: view.center.x, y: 160)
+        timelineBtn.center = CGPoint(x: view.center.x, y: 200)
     }
     
     // MARK: request helper to get access token
