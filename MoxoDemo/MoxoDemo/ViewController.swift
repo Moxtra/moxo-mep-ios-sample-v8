@@ -38,6 +38,7 @@ class ViewController: UIViewController, MEPClientDelegate {
         assert(ORG_ID.count != 0)
         assert(DEFAULT_UNIQUEID.count != 0)
         MEPClient.sharedInstance().setup(withDomain: MOXTRA_DOMAIN, linkConfig: nil)
+        MEPClient.sharedInstance().delegate = self
     }
     
     @objc private func login() {
@@ -92,8 +93,13 @@ class ViewController: UIViewController, MEPClientDelegate {
         present(navi, animated: true)
     }
     
+    // MARK: MEPClientDelegate
     func client(_ client: MEPClient, didTapClose sender: Any?) {
         MEPClient.sharedInstance().hideMEPWindow()
+    }
+    
+    func clientDidLogout(_ client: MEPClient) {
+        print("User did logged out!")
     }
     
     // MARK: interface
