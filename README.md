@@ -17,6 +17,15 @@ cd moxo-mep-ios-sample-v8/MoxoDemo
 pod install
 ```
 
+### Swift package manager
+Swift package is now available for Moxo iOS Dynamic SDK also.
+Steps:
+1. Open your project in Xcode
+2. Go to File > Swift Packages > Add Package Dependency
+3. Enter moxo sdk url: https://maven.moxtra.com/repo/mepsdkdylib.git
+4. Choose project and sdk version
+5. Click 'Add Package'
+
 ### Fill environment information:
 
 find 'moxo-mep-ios-sample-v8/MoxoDemo/MoxoDemo/ViewController.swift'
