@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B57300D57EF2776D4EA31B7 /* libPods-MoxoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299B9D0F19DE8B66E89C5511 /* libPods-MoxoDemo.a */; };
+		7D416F351A379A8F850EB8B9 /* Pods_MoxoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB91619F49273E17F9FEECE1 /* Pods_MoxoDemo.framework */; };
 		A870110529FA37110024BFD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870110429FA37110024BFD2 /* AppDelegate.swift */; };
 		A870110729FA37110024BFD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870110629FA37110024BFD2 /* SceneDelegate.swift */; };
 		A870110929FA37110024BFD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870110829FA37110024BFD2 /* ViewController.swift */; };
@@ -19,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		299B9D0F19DE8B66E89C5511 /* libPods-MoxoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoxoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A870110129FA37110024BFD2 /* MoxoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoxoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A870110429FA37110024BFD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A870110629FA37110024BFD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		A870111829FA38970024BFD2 /* MoxoDemoBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoxoDemoBridging-Header.h"; sourceTree = "<group>"; };
 		A87012542A04A7920024BFD2 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		A8AB89AE2A04C1CE00EFA150 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		CB91619F49273E17F9FEECE1 /* Pods_MoxoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoxoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F582767007901CFF5A9C5E66 /* Pods-MoxoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxoDemo.release.xcconfig"; path = "Target Support Files/Pods-MoxoDemo/Pods-MoxoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FECC590205DE044353BC87FC /* Pods-MoxoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxoDemo.debug.xcconfig"; path = "Target Support Files/Pods-MoxoDemo/Pods-MoxoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B57300D57EF2776D4EA31B7 /* libPods-MoxoDemo.a in Frameworks */,
+				7D416F351A379A8F850EB8B9 /* Pods_MoxoDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +50,7 @@
 		6C21F65BAC5A5D67834D8B69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				299B9D0F19DE8B66E89C5511 /* libPods-MoxoDemo.a */,
+				CB91619F49273E17F9FEECE1 /* Pods_MoxoDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
