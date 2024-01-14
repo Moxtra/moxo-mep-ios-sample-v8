@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D416F351A379A8F850EB8B9 /* Pods_MoxoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB91619F49273E17F9FEECE1 /* Pods_MoxoDemo.framework */; };
+		2B57300D57EF2776D4EA31B7 /* libPods-MoxoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299B9D0F19DE8B66E89C5511 /* libPods-MoxoDemo.a */; };
+		A84070622B4FDB14001E1E10 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84070612B4FDB14001E1E10 /* ReplayKit.framework */; };
+		A84070652B4FDB14001E1E10 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84070642B4FDB14001E1E10 /* SampleHandler.swift */; };
+		A84070692B4FDB14001E1E10 /* Broadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A84070602B4FDB14001E1E10 /* Broadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A84070702B4FDB77001E1E10 /* BroadcastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840706F2B4FDB77001E1E10 /* BroadcastManager.swift */; };
 		A870110529FA37110024BFD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870110429FA37110024BFD2 /* AppDelegate.swift */; };
 		A870110729FA37110024BFD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870110629FA37110024BFD2 /* SceneDelegate.swift */; };
 		A870110929FA37110024BFD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870110829FA37110024BFD2 /* ViewController.swift */; };
@@ -18,7 +22,39 @@
 		A8AB89AF2A04C1CE00EFA150 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB89AE2A04C1CE00EFA150 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A84070672B4FDB14001E1E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A87010F929FA37110024BFD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A840705F2B4FDB14001E1E10;
+			remoteInfo = Broadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A840706A2B4FDB14001E1E10 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A84070692B4FDB14001E1E10 /* Broadcast.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		299B9D0F19DE8B66E89C5511 /* libPods-MoxoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoxoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84070602B4FDB14001E1E10 /* Broadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Broadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84070612B4FDB14001E1E10 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		A84070642B4FDB14001E1E10 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		A84070662B4FDB14001E1E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A840706F2B4FDB77001E1E10 /* BroadcastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastManager.swift; sourceTree = "<group>"; };
+		A84070712B4FE6B1001E1E10 /* MoxoDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoxoDemo.entitlements; sourceTree = "<group>"; };
+		A84070862B4FE775001E1E10 /* Broadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Broadcast.entitlements; sourceTree = "<group>"; };
 		A870110129FA37110024BFD2 /* MoxoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoxoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A870110429FA37110024BFD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A870110629FA37110024BFD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,17 +66,24 @@
 		A870111829FA38970024BFD2 /* MoxoDemoBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoxoDemoBridging-Header.h"; sourceTree = "<group>"; };
 		A87012542A04A7920024BFD2 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		A8AB89AE2A04C1CE00EFA150 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		CB91619F49273E17F9FEECE1 /* Pods_MoxoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoxoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F582767007901CFF5A9C5E66 /* Pods-MoxoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxoDemo.release.xcconfig"; path = "Target Support Files/Pods-MoxoDemo/Pods-MoxoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FECC590205DE044353BC87FC /* Pods-MoxoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxoDemo.debug.xcconfig"; path = "Target Support Files/Pods-MoxoDemo/Pods-MoxoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A840705D2B4FDB14001E1E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84070622B4FDB14001E1E10 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A87010FE29FA37110024BFD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D416F351A379A8F850EB8B9 /* Pods_MoxoDemo.framework in Frameworks */,
+				2B57300D57EF2776D4EA31B7 /* libPods-MoxoDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,9 +93,28 @@
 		6C21F65BAC5A5D67834D8B69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB91619F49273E17F9FEECE1 /* Pods_MoxoDemo.framework */,
+				299B9D0F19DE8B66E89C5511 /* libPods-MoxoDemo.a */,
+				A84070612B4FDB14001E1E10 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A84070632B4FDB14001E1E10 /* Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				A84070862B4FE775001E1E10 /* Broadcast.entitlements */,
+				A84070642B4FDB14001E1E10 /* SampleHandler.swift */,
+				A84070662B4FDB14001E1E10 /* Info.plist */,
+			);
+			path = Broadcast;
+			sourceTree = "<group>";
+		};
+		A840706E2B4FDB63001E1E10 /* Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				A840706F2B4FDB77001E1E10 /* BroadcastManager.swift */,
+			);
+			path = Broadcast;
 			sourceTree = "<group>";
 		};
 		A87010F829FA37110024BFD2 = {
@@ -60,6 +122,7 @@
 			children = (
 				A870111829FA38970024BFD2 /* MoxoDemoBridging-Header.h */,
 				A870110329FA37110024BFD2 /* MoxoDemo */,
+				A84070632B4FDB14001E1E10 /* Broadcast */,
 				A870110229FA37110024BFD2 /* Products */,
 				F18607E7A6247C156AD9B53E /* Pods */,
 				6C21F65BAC5A5D67834D8B69 /* Frameworks */,
@@ -70,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A870110129FA37110024BFD2 /* MoxoDemo.app */,
+				A84070602B4FDB14001E1E10 /* Broadcast.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +141,8 @@
 		A870110329FA37110024BFD2 /* MoxoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A84070712B4FE6B1001E1E10 /* MoxoDemo.entitlements */,
+				A840706E2B4FDB63001E1E10 /* Broadcast */,
 				A870110429FA37110024BFD2 /* AppDelegate.swift */,
 				A870110629FA37110024BFD2 /* SceneDelegate.swift */,
 				A870110829FA37110024BFD2 /* ViewController.swift */,
@@ -102,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A840705F2B4FDB14001E1E10 /* Broadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A840706D2B4FDB14001E1E10 /* Build configuration list for PBXNativeTarget "Broadcast" */;
+			buildPhases = (
+				A840705C2B4FDB14001E1E10 /* Sources */,
+				A840705D2B4FDB14001E1E10 /* Frameworks */,
+				A840705E2B4FDB14001E1E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broadcast;
+			productName = Broadcast;
+			productReference = A84070602B4FDB14001E1E10 /* Broadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A870110029FA37110024BFD2 /* MoxoDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A870111529FA37120024BFD2 /* Build configuration list for PBXNativeTarget "MoxoDemo" */;
@@ -111,10 +194,12 @@
 				A87010FE29FA37110024BFD2 /* Frameworks */,
 				A87010FF29FA37110024BFD2 /* Resources */,
 				326977063A0BDEDC594C7845 /* [CP] Copy Pods Resources */,
+				A840706A2B4FDB14001E1E10 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A84070682B4FDB14001E1E10 /* PBXTargetDependency */,
 			);
 			name = MoxoDemo;
 			productName = MoxoDemo;
@@ -128,9 +213,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					A840705F2B4FDB14001E1E10 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					A870110029FA37110024BFD2 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -150,11 +238,19 @@
 			projectRoot = "";
 			targets = (
 				A870110029FA37110024BFD2 /* MoxoDemo */,
+				A840705F2B4FDB14001E1E10 /* Broadcast */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A840705E2B4FDB14001E1E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A87010FF29FA37110024BFD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +306,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A840705C2B4FDB14001E1E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84070652B4FDB14001E1E10 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A87010FD29FA37110024BFD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,12 +321,21 @@
 				A870110929FA37110024BFD2 /* ViewController.swift in Sources */,
 				A870110529FA37110024BFD2 /* AppDelegate.swift in Sources */,
 				A8AB89AF2A04C1CE00EFA150 /* DashboardViewController.swift in Sources */,
+				A84070702B4FDB77001E1E10 /* BroadcastManager.swift in Sources */,
 				A87012552A04A7920024BFD2 /* TimelineViewController.swift in Sources */,
 				A870110729FA37110024BFD2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A84070682B4FDB14001E1E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A840705F2B4FDB14001E1E10 /* Broadcast */;
+			targetProxy = A84070672B4FDB14001E1E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A870110A29FA37110024BFD2 /* Main.storyboard */ = {
@@ -244,6 +357,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A840706B2B4FDB14001E1E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Broadcast/Broadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Broadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.MoxoDemo.DSBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A840706C2B4FDB14001E1E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Broadcast/Broadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Broadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.MoxoDemo.DSBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A870111329FA37120024BFD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -362,12 +538,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FECC590205DE044353BC87FC /* Pods-MoxoDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoxoDemo/MoxoDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoxoDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -391,12 +571,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F582767007901CFF5A9C5E66 /* Pods-MoxoDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoxoDemo/MoxoDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoxoDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -419,6 +603,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A840706D2B4FDB14001E1E10 /* Build configuration list for PBXNativeTarget "Broadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A840706B2B4FDB14001E1E10 /* Debug */,
+				A840706C2B4FDB14001E1E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A87010FC29FA37110024BFD2 /* Build configuration list for PBXProject "MoxoDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
