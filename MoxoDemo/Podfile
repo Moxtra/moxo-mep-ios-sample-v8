@@ -5,7 +5,7 @@ source 'https://maven.moxtra.com/repo/moxtra-specs.git'
 target 'MoxoDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
-  pod 'MEPSDK', '~> 8.10.1'
+  pod 'MEPSDK', '~> 8.16.12'
   # Pods for MoxoDemo
 
 end

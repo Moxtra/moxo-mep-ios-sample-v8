@@ -22,6 +22,7 @@ class ViewController: UIViewController, MEPClientDelegate {
     var showliteBtn : UIButton!
     var timelineBtn : UIButton!
     var dashboardBtn : UIButton!
+    let manager = BroadcastManager.shared
 
     
     override func viewDidLoad() {

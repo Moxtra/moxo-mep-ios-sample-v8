@@ -46,20 +46,20 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         }
     }
     
-    private func getPresenceString(_ presence:MEPRelationUserStatus) -> String {
+    private func getPresenceString(_ presence:MEPUserStatus) -> String {
         switch presence {
-            case .online:
+            case .statusOnline:
                 return "Online"
-            case .offline:
+            case .statusOffline:
                 return "Offline"
-            case .outOfOffice:
+            case .statusOutOfOffice:
                 return "Away"
-            case .busy:
+            case .statusBusy:
                 return "Busy"
             case .unknown:
                 return "Invisible"
-            @unknown default:
-                return "Invisible"
+        @unknown default:
+            return "Invisible"
         }
     }
 
